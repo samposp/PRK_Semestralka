@@ -453,8 +453,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "ll.lex"
-#line 2 "ll.lex"
+#line 1 "lang.lex"
+#line 2 "lang.lex"
    // #define DEBUG
    #include <stdio.h> 
    #include <complex.h>
@@ -680,7 +680,7 @@ YY_DECL
 		}
 
 	{
-#line 11 "ll.lex"
+#line 11 "lang.lex"
 
 #line 686 "lex.yy.c"
 
@@ -741,38 +741,38 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 12 "ll.lex"
+#line 12 "lang.lex"
 {debugPrint("Operator Detected\n"); return yytext[0];}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 13 "ll.lex"
+#line 13 "lang.lex"
 {debugPrint("Bracket Detected\n"); return yytext[0];}
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 14 "ll.lex"
+#line 14 "lang.lex"
 {debugPrint("Line End Detected\n"); return LINE_END;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "ll.lex"
+#line 16 "lang.lex"
 {debugPrint("Real function Detected\n"); return FNC_REAL;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "ll.lex"
+#line 17 "lang.lex"
 {debugPrint("Imag function Detected\n"); return FNC_IMAG;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 18 "ll.lex"
+#line 18 "lang.lex"
 {debugPrint("Abs function Detected\n"); return FNC_ABS;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 20 "ll.lex"
+#line 20 "lang.lex"
 {
          debugPrint("Number Detected\n");
          yylval = atof(yytext);
@@ -781,12 +781,12 @@ YY_RULE_SETUP
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 25 "ll.lex"
+#line 25 "lang.lex"
 { /* skip blanks and tabs */ } 
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 26 "ll.lex"
+#line 26 "lang.lex"
 {
       yyerror("unexpected character"); 
       exit(1);
@@ -794,7 +794,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 30 "ll.lex"
+#line 30 "lang.lex"
 ECHO;
 	YY_BREAK
 #line 801 "lex.yy.c"
@@ -1802,8 +1802,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 30 "ll.lex"
-
+#line 30 "lang.lex"
 
 
 void debugPrint(char* msg){

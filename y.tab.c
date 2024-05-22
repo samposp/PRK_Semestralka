@@ -20,7 +20,7 @@
 
 #define YYPURE 0
 
-#line 2 "ll.y"
+#line 2 "lang.y"
  
     #define YYSTYPE complex
     #include <stdio.h> 
@@ -388,7 +388,7 @@ static YYINT  *yylexp = 0;
 
 static YYINT  *yylexemes = 0;
 #endif /* YYBTYACC */
-#line 70 "ll.y"
+#line 70 "lang.y"
  
 void yyerror(const char* s) {   
     printf("%s\n",s);
@@ -1081,7 +1081,7 @@ yyreduce:
     switch (yyn)
     {
 case 1:
-#line 17 "ll.y"
+#line 17 "lang.y"
 	{
             printAns(yystack.l_mark[-1]);
             exit(EXIT_SUCCESS);
@@ -1089,107 +1089,107 @@ case 1:
 #line 1090 "y.tab.c"
 break;
 case 2:
-#line 24 "ll.y"
+#line 24 "lang.y"
 	{yyval=yystack.l_mark[-1]+yystack.l_mark[0];}
 #line 1095 "y.tab.c"
 break;
 case 3:
-#line 25 "ll.y"
+#line 25 "lang.y"
 	{yyval=-yystack.l_mark[-1]+yystack.l_mark[0];}
 #line 1100 "y.tab.c"
 break;
 case 4:
-#line 26 "ll.y"
+#line 26 "lang.y"
 	{yyval=yystack.l_mark[-1]-yystack.l_mark[0];}
 #line 1105 "y.tab.c"
 break;
 case 5:
-#line 27 "ll.y"
+#line 27 "lang.y"
 	{yyval=-yystack.l_mark[-1]-yystack.l_mark[0];}
 #line 1110 "y.tab.c"
 break;
 case 6:
-#line 31 "ll.y"
+#line 31 "lang.y"
 	{yyval=yystack.l_mark[-1]+yystack.l_mark[0];}
 #line 1115 "y.tab.c"
 break;
 case 7:
-#line 32 "ll.y"
+#line 32 "lang.y"
 	{yyval=yystack.l_mark[-1]-yystack.l_mark[0];}
 #line 1120 "y.tab.c"
 break;
 case 8:
-#line 33 "ll.y"
+#line 33 "lang.y"
 	{yyval=0;}
 #line 1125 "y.tab.c"
 break;
 case 9:
-#line 36 "ll.y"
+#line 36 "lang.y"
 	{yyval=yystack.l_mark[-1]+yystack.l_mark[0];}
 #line 1130 "y.tab.c"
 break;
 case 10:
-#line 37 "ll.y"
+#line 37 "lang.y"
 	{yyval=yystack.l_mark[-1]-yystack.l_mark[0];}
 #line 1135 "y.tab.c"
 break;
 case 11:
-#line 41 "ll.y"
+#line 41 "lang.y"
 	{yyval=yystack.l_mark[-1]*yystack.l_mark[0];}
 #line 1140 "y.tab.c"
 break;
 case 12:
-#line 45 "ll.y"
+#line 45 "lang.y"
 	{yyval=yystack.l_mark[-1]*yystack.l_mark[0];}
 #line 1145 "y.tab.c"
 break;
 case 13:
-#line 46 "ll.y"
+#line 46 "lang.y"
 	{yyval=1;}
 #line 1150 "y.tab.c"
 break;
 case 14:
-#line 49 "ll.y"
+#line 49 "lang.y"
 	{yyval=yystack.l_mark[-1];}
 #line 1155 "y.tab.c"
 break;
 case 15:
-#line 50 "ll.y"
+#line 50 "lang.y"
 	{yyval=yystack.l_mark[0];}
 #line 1160 "y.tab.c"
 break;
 case 16:
-#line 51 "ll.y"
+#line 51 "lang.y"
 	{yyval=yystack.l_mark[0];}
 #line 1165 "y.tab.c"
 break;
 case 17:
-#line 55 "ll.y"
+#line 55 "lang.y"
 	{yyval=cimag(yystack.l_mark[-1]);}
 #line 1170 "y.tab.c"
 break;
 case 18:
-#line 56 "ll.y"
+#line 56 "lang.y"
 	{yyval=cabs(yystack.l_mark[-1]);}
 #line 1175 "y.tab.c"
 break;
 case 19:
-#line 57 "ll.y"
+#line 57 "lang.y"
 	{yyval=creal(yystack.l_mark[-1]);}
 #line 1180 "y.tab.c"
 break;
 case 20:
-#line 61 "ll.y"
+#line 61 "lang.y"
 	{yyval=yystack.l_mark[0];}
 #line 1185 "y.tab.c"
 break;
 case 21:
-#line 62 "ll.y"
+#line 62 "lang.y"
 	{yyval=yystack.l_mark[0];}
 #line 1190 "y.tab.c"
 break;
 case 22:
-#line 66 "ll.y"
+#line 66 "lang.y"
 	{yyval=yystack.l_mark[-1]*I;}
 #line 1195 "y.tab.c"
 break;
